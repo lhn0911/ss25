@@ -1,11 +1,11 @@
-let number = +prompt("Nhập vào số nguyên dương bất kỳ:");
+let a = +prompt("Nhập vào số nguyên dương bất kỳ:");
 let sum = 0;
 
-if (!isNaN(number)) {
+if (!isNaN(a)) {
     let i = 1;
 
-    while (i <= number) {
-        if ((number % 4 === 0 && i <= number - 2) || (number % 4 === 3 && i <= number - 1) || (number % 4 !== 0 && number % 4 !== 3)) {
+    while (i <= a) {
+        if ((a % 4 === 0 && i <= a - 2) || (a % 4 === 3 && i <= a - 1) || (a % 4 !== 0 && a % 4 !== 3)) {
             sum += i;
             console.log(i);
         }
